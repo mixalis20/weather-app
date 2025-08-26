@@ -1,16 +1,20 @@
 # 🌤 Weather App
 
-A simple and responsive Weather App built with **HTML, CSS, and JavaScript**.  
-It fetches real-time weather data using the [OpenWeatherMap API](https://openweathermap.org/api).
+A responsive Weather App built with **HTML, CSS, and JavaScript**.  
+It fetches real-time weather data and 5-day forecasts using the [OpenWeatherMap API](https://openweathermap.org/api).
 
 ---
 
 ## ✨ Features
-- 🔎 Search weather by city name  
-- 🌡 Displays temperature, feels-like, humidity  
-- ⛅ Weather description (clear, cloudy, rainy, etc.)  
-- 📱 Responsive design (works on desktop & mobile)  
-- ❌ Error handling for invalid city names  
+- 🔎 Search weather by city name
+- 🌡 Shows temperature, feels-like, humidity
+- ⛅ Weather description and icons
+- 📅 5-Day Forecast
+- 📱 Responsive design for mobile and desktop
+- 🌙 Dark/Light mode toggle
+- ⭐ Save favorite cities
+- ⚡ Loader animation while fetching data
+- ❌ Friendly error messages
 
 ---
 
@@ -20,15 +24,15 @@ It fetches real-time weather data using the [OpenWeatherMap API](https://openwea
 ---
 
 ## 🚀 Live Demo
-👉 [Click here to try it](https://username.github.io/weather-app/)  
+[Click here to try it](https://mixalis20.github.io/weather-app/)
 
 ---
 
 ## 🛠 Technologies Used
-- **HTML5**  
-- **CSS3 (Flexbox, Styling)**  
-- **JavaScript (Fetch API, DOM manipulation)**  
-- **OpenWeatherMap API**  
+- HTML5
+- CSS3 (Flexbox, Grid, Animations)
+- JavaScript (Fetch API, DOM manipulation)
+- OpenWeatherMap API
 
 ---
 
@@ -36,4 +40,4 @@ It fetches real-time weather data using the [OpenWeatherMap API](https://openwea
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/mixalis20/weather-app.git
+git clone git clone https://github.com/mixalis20/weather-app.git
