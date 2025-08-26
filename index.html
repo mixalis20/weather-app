@@ -5,18 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Weather Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
 </head>
 <body>
   <div class="app">
-    <h1>🌤 Weather App</h1>
+    <header>
+      <h1>🌤 Weather App</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+    
     <div class="search-box">
-      <input type="text" id="city-input" placeholder="Enter city...">
-      <button id="search-btn">Search</button>
-    </div>
-    <div id="weather-result" class="weather">
-      <!-- Τα αποτελέσματα θα μπαίνουν εδώ -->
-    </div>
-  </div>
+  <input type="text" id="city-input" placeholder="Enter city...">
+  <button id="search-btn">Search</button>
+</div>
+
+<div class="favorites">
+  <h4>Favorites:</h4>
+  <div id="favorites-list"></div>
+</div>
+
+<div id="loader" class="loader" style="display:none;"></div>
+<div id="weather-result" class="weather"></div>
+<div id="forecast" class="forecast"></div>
+
+
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,12 +1,24 @@
-body {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+}
+
+body {
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: linear-gradient(to right, #121212, #1e1e1e);
+  color: #eee;
 }
 
 .app {
@@ -14,11 +26,23 @@ body {
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  width: 350px;
+  width: 90%;
+  max-width: 400px;
 }
 
-h1 {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+header button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: inherit;
 }
 
 .search-box {
@@ -35,7 +59,7 @@ input {
   outline: none;
 }
 
-button {
+button#search-btn {
   padding: 0.7rem 1rem;
   border: none;
   border-radius: 5px;
@@ -43,9 +67,10 @@ button {
   color: #333;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
-button:hover {
+
+button#search-btn:hover {
   background: #fdd835;
 }
 
@@ -55,4 +80,58 @@ button:hover {
 
 .weather h2 {
   margin: 0.5rem 0;
+}
+
+.weather-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .app {
+    padding: 1rem;
+  }
+  .weather-icon {
+    font-size: 2.5rem;
+  }
+}
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background: rgba(255,255,255,0.2);
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 60px;
+}
+
+.forecast-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.forecast-card i {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.loader {
+  border: 5px solid rgba(255,255,255,0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 1rem auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
 }
