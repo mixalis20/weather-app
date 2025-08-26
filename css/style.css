@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #ffeb3b;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #fdd835;
+}
+
+.weather {
+  margin-top: 1rem;
+}
+
+.weather h2 {
+  margin: 0.5rem 0;
+}
